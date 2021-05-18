@@ -10,12 +10,11 @@ using System.Windows.Forms;
 
 namespace Calculator_BONDAD
 {
-    public partial class Form1 : Form
+    public partial class Body : Form
     {
-        public Form1()
+        public Body()
         {
             InitializeComponent();
         }
-
     }
 }

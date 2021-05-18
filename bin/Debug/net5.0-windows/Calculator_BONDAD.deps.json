@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "Calculator_BONDAD/1.0.0": {
+        "runtime": {
+          "Calculator_BONDAD.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Calculator_BONDAD/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
