@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\aaron\\Desktop\\OOP\\github\\Calculator_BONDAD\\Calculator_BONDAD.csproj": {}
+    "C:\\Users\\aaron\\Desktop\\NewProject\\Calculator_BONDAD\\Calculator_BONDAD.csproj": {}
   },
   "projects": {
-    "C:\\Users\\aaron\\Desktop\\OOP\\github\\Calculator_BONDAD\\Calculator_BONDAD.csproj": {
+    "C:\\Users\\aaron\\Desktop\\NewProject\\Calculator_BONDAD\\Calculator_BONDAD.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\aaron\\Desktop\\OOP\\github\\Calculator_BONDAD\\Calculator_BONDAD.csproj",
+        "projectUniqueName": "C:\\Users\\aaron\\Desktop\\NewProject\\Calculator_BONDAD\\Calculator_BONDAD.csproj",
         "projectName": "Calculator_BONDAD",
-        "projectPath": "C:\\Users\\aaron\\Desktop\\OOP\\github\\Calculator_BONDAD\\Calculator_BONDAD.csproj",
+        "projectPath": "C:\\Users\\aaron\\Desktop\\NewProject\\Calculator_BONDAD\\Calculator_BONDAD.csproj",
         "packagesPath": "C:\\Users\\aaron\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\aaron\\Desktop\\OOP\\github\\Calculator_BONDAD\\obj\\",
+        "outputPath": "C:\\Users\\aaron\\Desktop\\NewProject\\Calculator_BONDAD\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\aaron\\AppData\\Roaming\\NuGet\\NuGet.Config",
