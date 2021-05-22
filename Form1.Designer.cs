@@ -278,7 +278,7 @@ namespace Calculator_BONDAD
             this.Controls.Add(this.bone);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
-            this.Text = "God\'s Calculator";
+            this.Text = "FINAL Calculator";
             this.ResumeLayout(false);
             this.PerformLayout();
 
