@@ -16,6 +16,7 @@ C:\Users\aaron\Downloads\Calculator_BONDAD-main\obj\Debug\net5.0-windows\Calcula
 C:\Users\aaron\Downloads\Calculator_BONDAD-main\obj\Debug\net5.0-windows\ref\Calculator_BONDAD.dll
 C:\Users\aaron\Downloads\Calculator_BONDAD-main\obj\Debug\net5.0-windows\Calculator_BONDAD.pdb
 C:\Users\aaron\Downloads\Calculator_BONDAD-main\obj\Debug\net5.0-windows\Calculator_BONDAD.genruntimeconfig.cache
+<<<<<<< HEAD
 C:\Users\aaron\Desktop\NewProject\Calculator_BONDAD\bin\Debug\net5.0-windows\Calculator_BONDAD.exe
 C:\Users\aaron\Desktop\NewProject\Calculator_BONDAD\bin\Debug\net5.0-windows\Calculator_BONDAD.deps.json
 C:\Users\aaron\Desktop\NewProject\Calculator_BONDAD\bin\Debug\net5.0-windows\Calculator_BONDAD.runtimeconfig.json
@@ -34,3 +35,23 @@ C:\Users\aaron\Desktop\NewProject\Calculator_BONDAD\obj\Debug\net5.0-windows\Cal
 C:\Users\aaron\Desktop\NewProject\Calculator_BONDAD\obj\Debug\net5.0-windows\ref\Calculator_BONDAD.dll
 C:\Users\aaron\Desktop\NewProject\Calculator_BONDAD\obj\Debug\net5.0-windows\Calculator_BONDAD.pdb
 C:\Users\aaron\Desktop\NewProject\Calculator_BONDAD\obj\Debug\net5.0-windows\Calculator_BONDAD.genruntimeconfig.cache
+=======
+C:\Users\aaron\Desktop\OOP\Calculator_BONDAD\Calculator_BONDAD\bin\Debug\net5.0-windows\Calculator_BONDAD.exe
+C:\Users\aaron\Desktop\OOP\Calculator_BONDAD\Calculator_BONDAD\bin\Debug\net5.0-windows\Calculator_BONDAD.deps.json
+C:\Users\aaron\Desktop\OOP\Calculator_BONDAD\Calculator_BONDAD\bin\Debug\net5.0-windows\Calculator_BONDAD.runtimeconfig.json
+C:\Users\aaron\Desktop\OOP\Calculator_BONDAD\Calculator_BONDAD\bin\Debug\net5.0-windows\Calculator_BONDAD.runtimeconfig.dev.json
+C:\Users\aaron\Desktop\OOP\Calculator_BONDAD\Calculator_BONDAD\bin\Debug\net5.0-windows\Calculator_BONDAD.dll
+C:\Users\aaron\Desktop\OOP\Calculator_BONDAD\Calculator_BONDAD\bin\Debug\net5.0-windows\ref\Calculator_BONDAD.dll
+C:\Users\aaron\Desktop\OOP\Calculator_BONDAD\Calculator_BONDAD\bin\Debug\net5.0-windows\Calculator_BONDAD.pdb
+C:\Users\aaron\Desktop\OOP\Calculator_BONDAD\Calculator_BONDAD\obj\Debug\net5.0-windows\Calculator_BONDAD.csprojAssemblyReference.cache
+C:\Users\aaron\Desktop\OOP\Calculator_BONDAD\Calculator_BONDAD\obj\Debug\net5.0-windows\Calculator_BONDAD.Form1.resources
+C:\Users\aaron\Desktop\OOP\Calculator_BONDAD\Calculator_BONDAD\obj\Debug\net5.0-windows\Calculator_BONDAD.csproj.GenerateResource.cache
+C:\Users\aaron\Desktop\OOP\Calculator_BONDAD\Calculator_BONDAD\obj\Debug\net5.0-windows\Calculator_BONDAD.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\aaron\Desktop\OOP\Calculator_BONDAD\Calculator_BONDAD\obj\Debug\net5.0-windows\Calculator_BONDAD.AssemblyInfoInputs.cache
+C:\Users\aaron\Desktop\OOP\Calculator_BONDAD\Calculator_BONDAD\obj\Debug\net5.0-windows\Calculator_BONDAD.AssemblyInfo.cs
+C:\Users\aaron\Desktop\OOP\Calculator_BONDAD\Calculator_BONDAD\obj\Debug\net5.0-windows\Calculator_BONDAD.csproj.CoreCompileInputs.cache
+C:\Users\aaron\Desktop\OOP\Calculator_BONDAD\Calculator_BONDAD\obj\Debug\net5.0-windows\Calculator_BONDAD.dll
+C:\Users\aaron\Desktop\OOP\Calculator_BONDAD\Calculator_BONDAD\obj\Debug\net5.0-windows\ref\Calculator_BONDAD.dll
+C:\Users\aaron\Desktop\OOP\Calculator_BONDAD\Calculator_BONDAD\obj\Debug\net5.0-windows\Calculator_BONDAD.pdb
+C:\Users\aaron\Desktop\OOP\Calculator_BONDAD\Calculator_BONDAD\obj\Debug\net5.0-windows\Calculator_BONDAD.genruntimeconfig.cache
+>>>>>>> 4886b3b5841c486916d10d3adbf158d0d1c48997
