@@ -50,6 +50,10 @@ namespace Calculator_BONDAD
             this.bequal = new System.Windows.Forms.Button();
             this.tbox = new System.Windows.Forms.TextBox();
             this.labelCO = new System.Windows.Forms.Label();
+            this.bsqrroot = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // bone
@@ -204,7 +208,7 @@ namespace Calculator_BONDAD
             // 
             // bclearentry
             // 
-            this.bclearentry.Location = new System.Drawing.Point(236, 80);
+            this.bclearentry.Location = new System.Drawing.Point(292, 80);
             this.bclearentry.Name = "bclearentry";
             this.bclearentry.Size = new System.Drawing.Size(50, 50);
             this.bclearentry.TabIndex = 15;
@@ -214,7 +218,7 @@ namespace Calculator_BONDAD
             // 
             // bclear
             // 
-            this.bclear.Location = new System.Drawing.Point(236, 136);
+            this.bclear.Location = new System.Drawing.Point(292, 136);
             this.bclear.Name = "bclear";
             this.bclear.Size = new System.Drawing.Size(50, 50);
             this.bclear.TabIndex = 16;
@@ -224,7 +228,7 @@ namespace Calculator_BONDAD
             // 
             // bequal
             // 
-            this.bequal.Location = new System.Drawing.Point(236, 192);
+            this.bequal.Location = new System.Drawing.Point(292, 191);
             this.bequal.Name = "bequal";
             this.bequal.Size = new System.Drawing.Size(50, 106);
             this.bequal.TabIndex = 17;
@@ -238,7 +242,7 @@ namespace Calculator_BONDAD
             this.tbox.ForeColor = System.Drawing.SystemColors.WindowText;
             this.tbox.Location = new System.Drawing.Point(12, 46);
             this.tbox.Name = "tbox";
-            this.tbox.Size = new System.Drawing.Size(274, 28);
+            this.tbox.Size = new System.Drawing.Size(330, 28);
             this.tbox.TabIndex = 18;
             this.tbox.Text = "0";
             this.tbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -251,11 +255,52 @@ namespace Calculator_BONDAD
             this.labelCO.Size = new System.Drawing.Size(0, 20);
             this.labelCO.TabIndex = 19;
             // 
+            // bsqrroot
+            // 
+            this.bsqrroot.Location = new System.Drawing.Point(236, 80);
+            this.bsqrroot.Name = "bsqrroot";
+            this.bsqrroot.Size = new System.Drawing.Size(50, 50);
+            this.bsqrroot.TabIndex = 20;
+            this.bsqrroot.Text = "√";
+            this.bsqrroot.UseVisualStyleBackColor = true;
+            this.bsqrroot.Click += new System.EventHandler(this.operator_click);
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(236, 136);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(50, 50);
+            this.button3.TabIndex = 21;
+            this.button3.Text = "/";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(236, 191);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(50, 50);
+            this.button4.TabIndex = 22;
+            this.button4.Text = "/";
+            this.button4.UseVisualStyleBackColor = true;
+            // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(236, 248);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(50, 50);
+            this.button5.TabIndex = 23;
+            this.button5.Text = "/";
+            this.button5.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(298, 310);
+            this.ClientSize = new System.Drawing.Size(353, 304);
+            this.Controls.Add(this.button5);
+            this.Controls.Add(this.button4);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.bsqrroot);
             this.Controls.Add(this.labelCO);
             this.Controls.Add(this.tbox);
             this.Controls.Add(this.bequal);
@@ -306,6 +351,10 @@ namespace Calculator_BONDAD
         private System.Windows.Forms.Button bequal;
         private System.Windows.Forms.TextBox tbox;
         private System.Windows.Forms.Label labelCO;
+        private System.Windows.Forms.Button bsqrroot;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button5;
     }
 }
 

@@ -81,6 +81,8 @@ namespace Calculator_BONDAD
 
         private void equal_click(object sender, EventArgs e)
         {
+
+            // nag switch ako para under ng switch, yung cases na nakapaloob ay yung lahat ng operations na meron sa calcu ko
             switch(operation)
             {
                 case "+":
@@ -95,8 +97,13 @@ namespace Calculator_BONDAD
                 case "*":
                     tbox.Text = (result * Double.Parse(tbox.Text)).ToString();
                     break;
+                case "√":
+                    tbox.Text = (Math.Sqrt(Double.Parse(tbox.Text))).ToString();
+                    break;
                 default:
                     break;
+             
+
             }
             // mag a-appear yung done kapag clinick na yung equal sign imbis na operator
             result = Double.Parse(tbox.Text);
