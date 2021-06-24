@@ -51,9 +51,9 @@ namespace Calculator_BONDAD
             this.tbox = new System.Windows.Forms.TextBox();
             this.labelCO = new System.Windows.Forms.Label();
             this.bsqrroot = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.bsquare = new System.Windows.Forms.Button();
+            this.bcubed = new System.Windows.Forms.Button();
+            this.bfract = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // bone
@@ -265,41 +265,44 @@ namespace Calculator_BONDAD
             this.bsqrroot.UseVisualStyleBackColor = true;
             this.bsqrroot.Click += new System.EventHandler(this.operator_click);
             // 
-            // button3
+            // bsquare
             // 
-            this.button3.Location = new System.Drawing.Point(236, 136);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(50, 50);
-            this.button3.TabIndex = 21;
-            this.button3.Text = "/";
-            this.button3.UseVisualStyleBackColor = true;
+            this.bsquare.Location = new System.Drawing.Point(236, 136);
+            this.bsquare.Name = "bsquare";
+            this.bsquare.Size = new System.Drawing.Size(50, 50);
+            this.bsquare.TabIndex = 21;
+            this.bsquare.Text = "x²  ";
+            this.bsquare.UseVisualStyleBackColor = true;
+            this.bsquare.Click += new System.EventHandler(this.operator_click);
             // 
-            // button4
+            // bcubed
             // 
-            this.button4.Location = new System.Drawing.Point(236, 191);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(50, 50);
-            this.button4.TabIndex = 22;
-            this.button4.Text = "/";
-            this.button4.UseVisualStyleBackColor = true;
+            this.bcubed.Location = new System.Drawing.Point(236, 191);
+            this.bcubed.Name = "bcubed";
+            this.bcubed.Size = new System.Drawing.Size(50, 50);
+            this.bcubed.TabIndex = 22;
+            this.bcubed.Text = "x³";
+            this.bcubed.UseVisualStyleBackColor = true;
+            this.bcubed.Click += new System.EventHandler(this.operator_click);
             // 
-            // button5
+            // bfract
             // 
-            this.button5.Location = new System.Drawing.Point(236, 248);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(50, 50);
-            this.button5.TabIndex = 23;
-            this.button5.Text = "/";
-            this.button5.UseVisualStyleBackColor = true;
+            this.bfract.Location = new System.Drawing.Point(236, 248);
+            this.bfract.Name = "bfract";
+            this.bfract.Size = new System.Drawing.Size(50, 50);
+            this.bfract.TabIndex = 23;
+            this.bfract.Text = "Mod";
+            this.bfract.UseVisualStyleBackColor = true;
+            this.bfract.Click += new System.EventHandler(this.operator_click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(353, 304);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.bfract);
+            this.Controls.Add(this.bcubed);
+            this.Controls.Add(this.bsquare);
             this.Controls.Add(this.bsqrroot);
             this.Controls.Add(this.labelCO);
             this.Controls.Add(this.tbox);
@@ -352,9 +355,9 @@ namespace Calculator_BONDAD
         private System.Windows.Forms.TextBox tbox;
         private System.Windows.Forms.Label labelCO;
         private System.Windows.Forms.Button bsqrroot;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button bsquare;
+        private System.Windows.Forms.Button bcubed;
+        private System.Windows.Forms.Button bfract;
     }
 }
 

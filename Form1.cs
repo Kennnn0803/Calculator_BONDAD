@@ -71,12 +71,14 @@ namespace Calculator_BONDAD
         private void ce_click(object sender, EventArgs e)
         {
             tbox.Text = "0";
+            labelCO.Text = "Done!";
         }
 
         private void c_click(object sender, EventArgs e)
         {
             tbox.Text = "0";
             result = 0;
+            labelCO.Text = "Done!";
         }
 
         private void equal_click(object sender, EventArgs e)
@@ -100,6 +102,14 @@ namespace Calculator_BONDAD
                 case "√":
                     tbox.Text = (Math.Sqrt(Double.Parse(tbox.Text))).ToString();
                     break;
+                case "x²":
+                    Double num = Double.Parse(tbox.Text);
+                    Double sqr = (num * num);
+                    tbox.Text = (sqr).ToString();
+                    break;
+                case "Mod":
+                    tbox.Text = (result % Double.Parse(tbox.Text)).ToString();
+                    break;
                 default:
                     break;
              
@@ -107,7 +117,8 @@ namespace Calculator_BONDAD
             }
             // mag a-appear yung done kapag clinick na yung equal sign imbis na operator
             result = Double.Parse(tbox.Text);
-            labelCO.Text = "Done!";
+            labelCO.Text = "Done! Answer is: " + result;
+           
         }
     }
 }
