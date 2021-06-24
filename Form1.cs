@@ -103,9 +103,7 @@ namespace Calculator_BONDAD
                     tbox.Text = (Math.Sqrt(Double.Parse(tbox.Text))).ToString();
                     break;
                 case "x²":
-                    Double num = Double.Parse(tbox.Text);
-                    Double sqr = (num * num);
-                    tbox.Text = (sqr).ToString();
+                    tbox.Text = (Math.Pow(Double.Parse(tbox.Text), 2)).ToString();
                     break;
                 case "Mod":
                     tbox.Text = (result % Double.Parse(tbox.Text)).ToString();
