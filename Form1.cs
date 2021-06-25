@@ -27,6 +27,8 @@ namespace Calculator_BONDAD
                 tbox.Clear();
 
             opperformed = false;
+            tbox.Clear();
+            
 
             Button button=(Button)sender;
 
