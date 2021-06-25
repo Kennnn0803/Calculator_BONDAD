@@ -271,17 +271,18 @@ namespace Calculator_BONDAD
             this.bsquare.Name = "bsquare";
             this.bsquare.Size = new System.Drawing.Size(50, 50);
             this.bsquare.TabIndex = 21;
-            this.bsquare.Text = "x²  ";
+            this.bsquare.Text = "sqr";
             this.bsquare.UseVisualStyleBackColor = true;
             this.bsquare.Click += new System.EventHandler(this.operator_click);
             // 
             // bcubed
             // 
+            this.bcubed.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.bcubed.Location = new System.Drawing.Point(236, 191);
             this.bcubed.Name = "bcubed";
             this.bcubed.Size = new System.Drawing.Size(50, 50);
             this.bcubed.TabIndex = 22;
-            this.bcubed.Text = "x³";
+            this.bcubed.Text = "cub";
             this.bcubed.UseVisualStyleBackColor = true;
             this.bcubed.Click += new System.EventHandler(this.operator_click);
             // 
@@ -299,7 +300,7 @@ namespace Calculator_BONDAD
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(353, 304);
+            this.ClientSize = new System.Drawing.Size(355, 344);
             this.Controls.Add(this.bfract);
             this.Controls.Add(this.bcubed);
             this.Controls.Add(this.bsquare);

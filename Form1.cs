@@ -71,14 +71,14 @@ namespace Calculator_BONDAD
         private void ce_click(object sender, EventArgs e)
         {
             tbox.Text = "0";
-            labelCO.Text = "Done!";
+            labelCO.Text = "Clear Entry!";
         }
 
         private void c_click(object sender, EventArgs e)
         {
             tbox.Text = "0";
             result = 0;
-            labelCO.Text = "Done!";
+            labelCO.Text = "Clear!";
         }
 
         private void equal_click(object sender, EventArgs e)
@@ -102,12 +102,16 @@ namespace Calculator_BONDAD
                 case "√":
                     tbox.Text = (Math.Sqrt(Double.Parse(tbox.Text))).ToString();
                     break;
-                case "x²":
+                case "sqr":
                     tbox.Text = (Math.Pow(Double.Parse(tbox.Text), 2)).ToString();
+                    break;
+                case "cub":
+                    tbox.Text = (Math.Pow(Double.Parse(tbox.Text), 3)).ToString();
                     break;
                 case "Mod":
                     tbox.Text = (result % Double.Parse(tbox.Text)).ToString();
                     break;
+
                 default:
                     break;
              
