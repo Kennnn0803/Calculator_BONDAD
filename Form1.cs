@@ -25,12 +25,9 @@ namespace Calculator_BONDAD
         {
             if ((tbox.Text == "0") || (opperformed) ) 
                 tbox.Clear();
-
             opperformed = false;
-            tbox.Clear();
-            
 
-            Button button=(Button)sender;
+            Button button = (Button)sender;
 
             // ililimit yung dot to once lang pede ma click pag na click na para avoided ang error
             if (button.Text == ".")
@@ -43,7 +40,7 @@ namespace Calculator_BONDAD
 
             }else
             
-                tbox.Text = tbox.Text + button.Text;
+                tbox.Text = tbox.Text + button.Text;   
                 
         }
 
@@ -85,6 +82,7 @@ namespace Calculator_BONDAD
 
         private void equal_click(object sender, EventArgs e)
         {
+            
 
             // nag switch ako para under ng switch, yung cases na nakapaloob ay yung lahat ng operations na meron sa calcu ko
             switch(operation)
@@ -121,7 +119,8 @@ namespace Calculator_BONDAD
             }
             // mag a-appear yung done kapag clinick na yung equal sign imbis na operator
             result = Double.Parse(tbox.Text);
-            labelCO.Text = "Done! Answer is: " + result;
+            labelCO.Text =   "Done! Answer is: " + result;
+            
            
         }
     }

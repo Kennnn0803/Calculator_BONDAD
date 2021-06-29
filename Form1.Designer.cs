@@ -54,6 +54,9 @@ namespace Calculator_BONDAD
             this.bsquare = new System.Windows.Forms.Button();
             this.bcubed = new System.Windows.Forms.Button();
             this.bfract = new System.Windows.Forms.Button();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.bmemory = new System.Windows.Forms.Button();
+            this.bdelete = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // bone
@@ -228,9 +231,9 @@ namespace Calculator_BONDAD
             // 
             // bequal
             // 
-            this.bequal.Location = new System.Drawing.Point(292, 191);
+            this.bequal.Location = new System.Drawing.Point(292, 248);
             this.bequal.Name = "bequal";
-            this.bequal.Size = new System.Drawing.Size(50, 106);
+            this.bequal.Size = new System.Drawing.Size(50, 49);
             this.bequal.TabIndex = 17;
             this.bequal.Text = "=";
             this.bequal.UseVisualStyleBackColor = true;
@@ -257,7 +260,7 @@ namespace Calculator_BONDAD
             // 
             // bsqrroot
             // 
-            this.bsqrroot.Location = new System.Drawing.Point(236, 80);
+            this.bsqrroot.Location = new System.Drawing.Point(236, 135);
             this.bsqrroot.Name = "bsqrroot";
             this.bsqrroot.Size = new System.Drawing.Size(50, 50);
             this.bsqrroot.TabIndex = 20;
@@ -267,7 +270,7 @@ namespace Calculator_BONDAD
             // 
             // bsquare
             // 
-            this.bsquare.Location = new System.Drawing.Point(236, 136);
+            this.bsquare.Location = new System.Drawing.Point(236, 191);
             this.bsquare.Name = "bsquare";
             this.bsquare.Size = new System.Drawing.Size(50, 50);
             this.bsquare.TabIndex = 21;
@@ -278,7 +281,7 @@ namespace Calculator_BONDAD
             // bcubed
             // 
             this.bcubed.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.bcubed.Location = new System.Drawing.Point(236, 191);
+            this.bcubed.Location = new System.Drawing.Point(236, 247);
             this.bcubed.Name = "bcubed";
             this.bcubed.Size = new System.Drawing.Size(50, 50);
             this.bcubed.TabIndex = 22;
@@ -288,7 +291,7 @@ namespace Calculator_BONDAD
             // 
             // bfract
             // 
-            this.bfract.Location = new System.Drawing.Point(236, 248);
+            this.bfract.Location = new System.Drawing.Point(292, 191);
             this.bfract.Name = "bfract";
             this.bfract.Size = new System.Drawing.Size(50, 50);
             this.bfract.TabIndex = 23;
@@ -296,11 +299,40 @@ namespace Calculator_BONDAD
             this.bfract.UseVisualStyleBackColor = true;
             this.bfract.Click += new System.EventHandler(this.operator_click);
             // 
+            // richTextBox1
+            // 
+            this.richTextBox1.Location = new System.Drawing.Point(357, 62);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(155, 235);
+            this.richTextBox1.TabIndex = 24;
+            this.richTextBox1.Text = "";
+            // 
+            // bmemory
+            // 
+            this.bmemory.Location = new System.Drawing.Point(367, 14);
+            this.bmemory.Name = "bmemory";
+            this.bmemory.Size = new System.Drawing.Size(135, 30);
+            this.bmemory.TabIndex = 25;
+            this.bmemory.Text = "Memory";
+            this.bmemory.UseVisualStyleBackColor = true;
+            // 
+            // bdelete
+            // 
+            this.bdelete.Location = new System.Drawing.Point(236, 79);
+            this.bdelete.Name = "bdelete";
+            this.bdelete.Size = new System.Drawing.Size(50, 50);
+            this.bdelete.TabIndex = 27;
+            this.bdelete.Text = "DEL";
+            this.bdelete.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(355, 311);
+            this.ClientSize = new System.Drawing.Size(524, 311);
+            this.Controls.Add(this.bdelete);
+            this.Controls.Add(this.bmemory);
+            this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.bfract);
             this.Controls.Add(this.bcubed);
             this.Controls.Add(this.bsquare);
@@ -359,6 +391,9 @@ namespace Calculator_BONDAD
         private System.Windows.Forms.Button bsquare;
         private System.Windows.Forms.Button bcubed;
         private System.Windows.Forms.Button bfract;
+        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.Button bmemory;
+        private System.Windows.Forms.Button bdelete;
     }
 }
 
