@@ -15,14 +15,20 @@ namespace Calculator_BONDAD
         Double result = 0;
         String operation = "";
         bool opperformed = false;
+        String first, second;
         
+
+
         public Form1()
         {
             InitializeComponent();
+            memorybox.Visible = false;
         }
 
         private void button_click(object sender, EventArgs e)
         {
+          
+
             if ((tbox.Text == "0") || (opperformed) ) 
                 tbox.Clear();
             opperformed = false;
@@ -59,14 +65,17 @@ namespace Calculator_BONDAD
             }
             else
 
+            {
+                operation = button.Text;
+                result = Double.Parse(tbox.Text);
+                labelCO.Text = "History: " + result + " " + operation;
+                opperformed = true;
+            }
 
-            operation = button.Text;
-            result = Double.Parse(tbox.Text);
-            labelCO.Text = "History: " + result + " " + operation;
-            opperformed = true;
-
+            first = labelCO.Text;
         }
 
+        
         private void ce_click(object sender, EventArgs e)
         {
             tbox.Text = "0";
@@ -82,10 +91,9 @@ namespace Calculator_BONDAD
 
         private void equal_click(object sender, EventArgs e)
         {
-            
-
+            second = tbox.Text;
             // nag switch ako para under ng switch, yung cases na nakapaloob ay yung lahat ng operations na meron sa calcu ko
-            switch(operation)
+            switch (operation)
             {
                 case "+":
                     tbox.Text = (result + Double.Parse(tbox.Text)).ToString();
@@ -114,14 +122,51 @@ namespace Calculator_BONDAD
 
                 default:
                     break;
-             
+
 
             }
+
+
             // mag a-appear yung done kapag clinick na yung equal sign imbis na operator
             result = Double.Parse(tbox.Text);
-            labelCO.Text =   "Done! Answer is: " + result;
-            
+            labelCO.Text = "Done! Answer is: " + result;
+
            
+            memorybox.AppendText(first + "  " + second + "  = " + "\n");
+            memorybox.AppendText("\n" + tbox.Text + "\n\n");
+            labelCO.Text = " ";
+
+
         }
+
+        private void bmemory_Click(object sender, EventArgs e)
+        {
+            memorybox.Visible = true;
+           
+
+        }
+
+        private void bcmemory_Click(object sender, EventArgs e)
+        {
+            memorybox.Clear();
+            if (memorybox.Text == "")
+            {
+                memorybox.Text = "Memory Cleared";
+            }
+        }
+
+        private void bdelete_Click(object sender, EventArgs e)
+        {
+            if (Double.Parse(tbox.Text) > 0)
+            {
+                tbox.Text = tbox.Text.Remove(tbox.Text.Length - 1, 1);
+            }
+            if (tbox.Text == " ")
+            {
+                tbox.Text = "0";
+            }
+            
+        }
+
     }
 }

@@ -54,9 +54,10 @@ namespace Calculator_BONDAD
             this.bsquare = new System.Windows.Forms.Button();
             this.bcubed = new System.Windows.Forms.Button();
             this.bfract = new System.Windows.Forms.Button();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.memorybox = new System.Windows.Forms.RichTextBox();
             this.bmemory = new System.Windows.Forms.Button();
             this.bdelete = new System.Windows.Forms.Button();
+            this.bcmemory = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // bone
@@ -299,22 +300,24 @@ namespace Calculator_BONDAD
             this.bfract.UseVisualStyleBackColor = true;
             this.bfract.Click += new System.EventHandler(this.operator_click);
             // 
-            // richTextBox1
+            // memorybox
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(357, 62);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(155, 235);
-            this.richTextBox1.TabIndex = 24;
-            this.richTextBox1.Text = "";
+            this.memorybox.Font = new System.Drawing.Font("Segoe UI Historic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.memorybox.Location = new System.Drawing.Point(357, 81);
+            this.memorybox.Name = "memorybox";
+            this.memorybox.Size = new System.Drawing.Size(155, 216);
+            this.memorybox.TabIndex = 24;
+            this.memorybox.Text = "";
             // 
             // bmemory
             // 
-            this.bmemory.Location = new System.Drawing.Point(367, 14);
+            this.bmemory.Location = new System.Drawing.Point(357, 14);
             this.bmemory.Name = "bmemory";
-            this.bmemory.Size = new System.Drawing.Size(135, 30);
+            this.bmemory.Size = new System.Drawing.Size(145, 30);
             this.bmemory.TabIndex = 25;
             this.bmemory.Text = "Memory";
             this.bmemory.UseVisualStyleBackColor = true;
+            this.bmemory.Click += new System.EventHandler(this.bmemory_Click);
             // 
             // bdelete
             // 
@@ -324,15 +327,27 @@ namespace Calculator_BONDAD
             this.bdelete.TabIndex = 27;
             this.bdelete.Text = "DEL";
             this.bdelete.UseVisualStyleBackColor = true;
+            this.bdelete.Click += new System.EventHandler(this.bdelete_Click);
+            // 
+            // bcmemory
+            // 
+            this.bcmemory.Location = new System.Drawing.Point(357, 45);
+            this.bcmemory.Name = "bcmemory";
+            this.bcmemory.Size = new System.Drawing.Size(145, 30);
+            this.bcmemory.TabIndex = 28;
+            this.bcmemory.Text = "Clear Memory";
+            this.bcmemory.UseVisualStyleBackColor = true;
+            this.bcmemory.Click += new System.EventHandler(this.bcmemory_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(524, 311);
+            this.Controls.Add(this.bcmemory);
             this.Controls.Add(this.bdelete);
             this.Controls.Add(this.bmemory);
-            this.Controls.Add(this.richTextBox1);
+            this.Controls.Add(this.memorybox);
             this.Controls.Add(this.bfract);
             this.Controls.Add(this.bcubed);
             this.Controls.Add(this.bsquare);
@@ -391,9 +406,10 @@ namespace Calculator_BONDAD
         private System.Windows.Forms.Button bsquare;
         private System.Windows.Forms.Button bcubed;
         private System.Windows.Forms.Button bfract;
-        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.RichTextBox memorybox;
         private System.Windows.Forms.Button bmemory;
         private System.Windows.Forms.Button bdelete;
+        private System.Windows.Forms.Button bcmemory;
     }
 }
 
