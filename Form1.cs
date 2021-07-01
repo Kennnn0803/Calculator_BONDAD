@@ -85,8 +85,11 @@ namespace Calculator_BONDAD
         
         private void ce_click(object sender, EventArgs e)
         {
+            operation = "";
             equal = false;
+            opperformed = false;
             tbox.Text = "0";
+            result = 0;
             labelCO.Text = "Clear Entry!";
         }
 
@@ -98,6 +101,11 @@ namespace Calculator_BONDAD
             tbox.Text = "0";
             result = 0;
             labelCO.Text = "Clear!";
+            memorybox.Clear();
+            if (memorybox.Text == "")
+            {
+                memorybox.Text = "Memory Cleared";
+            }
         }
 
         private void equal_click(object sender, EventArgs e)
@@ -140,7 +148,7 @@ namespace Calculator_BONDAD
 
 
             
-            memorybox.AppendText(first + "  " + second + "  = " + "\n");
+            memorybox.AppendText("\n" + first + "  " + second + "  = " + "\n");
             memorybox.AppendText("\n" + tbox.Text + "\n\n");
             labelCO.Text = " ";
 
@@ -149,8 +157,9 @@ namespace Calculator_BONDAD
 
         private void bmemory_Click(object sender, EventArgs e)
         {
+            
+        
             memorybox.Visible = true;
-           
 
         }
 
