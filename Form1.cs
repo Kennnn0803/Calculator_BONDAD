@@ -16,7 +16,7 @@ namespace Calculator_BONDAD
         String operation = "";
         bool opperformed = false;
         String first, second;
-        
+        bool equal = false;
 
 
         public Form1()
@@ -27,7 +27,8 @@ namespace Calculator_BONDAD
 
         private void button_click(object sender, EventArgs e)
         {
-          
+            
+            
 
             if ((tbox.Text == "0") || (opperformed) ) 
                 tbox.Clear();
@@ -54,36 +55,46 @@ namespace Calculator_BONDAD
         {
             Button button = (Button)sender;
 
+
             // kapag continuous yung pag input ng numbers at operation, gagawin niya agad before mag click ng new operator
-            if (result != 0)
+
+
+            if (equal == false)
             {
                 bequal.PerformClick();
+                equal = false;
                 operation = button.Text;
                 result = Double.Parse(tbox.Text);
                 labelCO.Text = "History: " + result + " " + operation;
                 opperformed = true;
+                
             }
             else
-
             {
-                operation = button.Text;
-                result = Double.Parse(tbox.Text);
-                labelCO.Text = "History: " + result + " " + operation;
-                opperformed = true;
+                    operation = button.Text;
+                    result = Double.Parse(tbox.Text);
+                    labelCO.Text = "History: " + result + " " + operation;
+                    opperformed = true;
+                    
             }
 
+                       
             first = labelCO.Text;
         }
 
         
         private void ce_click(object sender, EventArgs e)
         {
+            equal = false;
             tbox.Text = "0";
             labelCO.Text = "Clear Entry!";
         }
 
         private void c_click(object sender, EventArgs e)
         {
+            operation = "";
+            equal = false;
+            opperformed = false;
             tbox.Text = "0";
             result = 0;
             labelCO.Text = "Clear!";
@@ -91,6 +102,7 @@ namespace Calculator_BONDAD
 
         private void equal_click(object sender, EventArgs e)
         {
+            equal = true;
             second = tbox.Text;
             // nag switch ako para under ng switch, yung cases na nakapaloob ay yung lahat ng operations na meron sa calcu ko
             switch (operation)
@@ -127,11 +139,7 @@ namespace Calculator_BONDAD
             }
 
 
-            // mag a-appear yung done kapag clinick na yung equal sign imbis na operator
-            result = Double.Parse(tbox.Text);
-            labelCO.Text = "Done! Answer is: " + result;
-
-           
+            
             memorybox.AppendText(first + "  " + second + "  = " + "\n");
             memorybox.AppendText("\n" + tbox.Text + "\n\n");
             labelCO.Text = " ";
@@ -161,7 +169,7 @@ namespace Calculator_BONDAD
             {
                 tbox.Text = tbox.Text.Remove(tbox.Text.Length - 1, 1);
             }
-            if (tbox.Text == " ")
+            if (tbox.Text == "")
             {
                 tbox.Text = "0";
             }
