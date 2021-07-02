@@ -275,7 +275,7 @@ namespace Calculator_BONDAD
             this.bsquare.Name = "bsquare";
             this.bsquare.Size = new System.Drawing.Size(50, 50);
             this.bsquare.TabIndex = 21;
-            this.bsquare.Text = "sqr";
+            this.bsquare.Text = "X²";
             this.bsquare.UseVisualStyleBackColor = true;
             this.bsquare.Click += new System.EventHandler(this.operator_click);
             // 
@@ -286,7 +286,7 @@ namespace Calculator_BONDAD
             this.bcubed.Name = "bcubed";
             this.bcubed.Size = new System.Drawing.Size(50, 50);
             this.bcubed.TabIndex = 22;
-            this.bcubed.Text = "cub";
+            this.bcubed.Text = "X³";
             this.bcubed.UseVisualStyleBackColor = true;
             this.bcubed.Click += new System.EventHandler(this.operator_click);
             // 
@@ -302,7 +302,9 @@ namespace Calculator_BONDAD
             // 
             // memorybox
             // 
+            this.memorybox.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.memorybox.Font = new System.Drawing.Font("Segoe UI Historic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.memorybox.ForeColor = System.Drawing.SystemColors.InactiveBorder;
             this.memorybox.Location = new System.Drawing.Point(357, 81);
             this.memorybox.Name = "memorybox";
             this.memorybox.Size = new System.Drawing.Size(155, 216);
@@ -374,7 +376,7 @@ namespace Calculator_BONDAD
             this.Controls.Add(this.bone);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
-            this.Text = "FINAL Calculator";
+            this.Text = "Kenn\'s Calculator";
             this.ResumeLayout(false);
             this.PerformLayout();
 

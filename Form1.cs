@@ -12,12 +12,8 @@ namespace Calculator_BONDAD
 {
     public partial class Form1 : Form
     {
-        Double result = 0;
-        String operation = "";
-        bool opperformed = false;
-        String first, second;
-        bool equal = false;
-
+        var variables = new var();
+            
 
         public Form1()
         {
@@ -28,27 +24,20 @@ namespace Calculator_BONDAD
         private void button_click(object sender, EventArgs e)
         {
             
-            
-
-            if ((tbox.Text == "0") || (opperformed) ) 
+            if ((tbox.Text == "0") || (variables.opperformed) ) 
                 tbox.Clear();
-            opperformed = false;
+            variables.opperformed = false;
 
             Button button = (Button)sender;
 
             // ililimit yung dot to once lang pede ma click pag na click na para avoided ang error
             if (button.Text == ".")
-
             {
                 if (!tbox.Text.Contains("."))
-
                     tbox.Text = tbox.Text + button.Text;
-                
-
             }else
             
-                tbox.Text = tbox.Text + button.Text;   
-                
+                tbox.Text = tbox.Text + button.Text;                
         }
 
         private void operator_click(object sender, EventArgs e)
@@ -59,47 +48,46 @@ namespace Calculator_BONDAD
             // kapag continuous yung pag input ng numbers at operation, gagawin niya agad before mag click ng new operator
 
 
-            if (equal == false)
+            if (variables.equal == false)
             {
                 bequal.PerformClick();
-                equal = false;
-                operation = button.Text;
-                result = Double.Parse(tbox.Text);
-                labelCO.Text = "History: " + result + " " + operation;
-                opperformed = true;
+                variables.equal = false;
+                variables.operation = button.Text;
+                variables.result = Double.Parse(tbox.Text);
+                labelCO.Text = "History: " + variables.result + " " + variables.operation;
+                variables.opperformed = true;
                 
             }
             else
             {
-                    operation = button.Text;
-                    result = Double.Parse(tbox.Text);
-                    labelCO.Text = "History: " + result + " " + operation;
-                    opperformed = true;
+                variables.operation = button.Text;
+                variables.result = Double.Parse(tbox.Text);
+                    labelCO.Text = "History: " + variables.result + " " + variables.operation;
+                variables.opperformed = true;
                     
             }
+            variables.first = Convert.ToString(variables.result);
 
-                       
-            first = labelCO.Text;
         }
-
-        
+    
         private void ce_click(object sender, EventArgs e)
         {
-            operation = "";
-            equal = false;
-            opperformed = false;
+            variables.operation = "";
+            variables.equal = false;
+            variables.opperformed = false;
             tbox.Text = "0";
-            result = 0;
+            variables.result = 0;
             labelCO.Text = "Clear Entry!";
         }
 
         private void c_click(object sender, EventArgs e)
         {
-            operation = "";
-            equal = false;
-            opperformed = false;
+            variables.operation = "";
+            variables.equal = false;
+            variables.opperformed = false;
             tbox.Text = "0";
-            result = 0;
+            variables.result = 0;
+            variables.first = "First input = ";
             labelCO.Text = "Clear!";
             memorybox.Clear();
             if (memorybox.Text == "")
@@ -110,56 +98,22 @@ namespace Calculator_BONDAD
 
         private void equal_click(object sender, EventArgs e)
         {
-            equal = true;
-            second = tbox.Text;
-            // nag switch ako para under ng switch, yung cases na nakapaloob ay yung lahat ng operations na meron sa calcu ko
-            switch (operation)
-            {
-                case "+":
-                    tbox.Text = (result + Double.Parse(tbox.Text)).ToString();
-                    break;
-                case "-":
-                    tbox.Text = (result - Double.Parse(tbox.Text)).ToString();
-                    break;
-                case "/":
-                    tbox.Text = (result / Double.Parse(tbox.Text)).ToString();
-                    break;
-                case "*":
-                    tbox.Text = (result * Double.Parse(tbox.Text)).ToString();
-                    break;
-                case "√":
-                    tbox.Text = (Math.Sqrt(Double.Parse(tbox.Text))).ToString();
-                    break;
-                case "sqr":
-                    tbox.Text = (Math.Pow(Double.Parse(tbox.Text), 2)).ToString();
-                    break;
-                case "cub":
-                    tbox.Text = (Math.Pow(Double.Parse(tbox.Text), 3)).ToString();
-                    break;
-                case "Mod":
-                    tbox.Text = (result % Double.Parse(tbox.Text)).ToString();
-                    break;
-
-                default:
-                    break;
-
-
-            }
-
-
-            
-            memorybox.AppendText("\n" + first + "  " + second + "  = " + "\n");
+            variables.equal = true;
+            variables.second = tbox.Text;
+        
+            variables.tbox = tbox.Text;
+            variables.Operations();
+            tbox.Text = variables.tbox;
+      
+            memorybox.AppendText("\n" + variables.first + "  " + variables.operation + "  " + variables.second + "  = " + "\n");
             memorybox.AppendText("\n" + tbox.Text + "\n\n");
             labelCO.Text = " ";
-
-
         }
 
         private void bmemory_Click(object sender, EventArgs e)
         {
-            
-        
             memorybox.Visible = true;
+          
 
         }
 
@@ -171,7 +125,6 @@ namespace Calculator_BONDAD
                 memorybox.Text = "Memory Cleared";
             }
         }
-
         private void bdelete_Click(object sender, EventArgs e)
         {
             if (Double.Parse(tbox.Text) > 0)
